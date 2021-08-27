@@ -1,17 +1,17 @@
 {
-    "name": "vendor_slug/package_slug",
-    "description": ":package_description",
+    "name": "rony/laravel-disk-monitor",
+    "description": "A test package to monitor disks",
     "keywords": [
-        ":vendor_name",
+        "rony",
         "laravel",
-        "package_slug"
+        "laravel-disk-monitor"
     ],
-    "homepage": "https://github.com/vendor_slug/package_slug",
+    "homepage": "https://github.com/ronydebnath/laravel-disk-monitor",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Rony Debnath",
+            "email": "rony.adn@gmail.com",
             "role": "Developer"
         }
     ],
@@ -30,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Rony\\LaravelDiskMonitor\\": "src",
+            "Rony\\LaravelDiskMonitor\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Rony\\LaravelDiskMonitor\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -50,10 +50,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Rony\\LaravelDiskMonitor\\LaravelDiskMonitorServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "LaravelDiskMonitor": "Rony\\LaravelDiskMonitor\\LaravelDiskMonitorFacade"
             }
         }
     },
